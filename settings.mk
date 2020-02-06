@@ -1,0 +1,11 @@
+CC=ia16-elf-gcc
+CXX=ia16-elf-g++
+LD=ia16-elf-ld
+AS=ia16-elf-as
+AR=ia16-elf-ar
+RANLIB=ia16-elf-ranlib
+OBJDUMP=ia16-elf-objdump
+OBJCOPY=ia16-elf-objcopy
+STRIP=ia16-elf-strip
+GCOV=ia16-elf-gcov
+EXT=.com
