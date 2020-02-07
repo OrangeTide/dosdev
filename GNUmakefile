@@ -72,7 +72,9 @@ ifneq ($$(CFLAGS),)
 $$(EXEC) :: CFLAGS := $$(CFLAGS)
 endif
 ifneq ($$(CPPFLAGS),)
-$$(EXEC) :: CPPFLAGS := $$(CPPFLAGS)
+$$(EXEC) :: CPPFLAGS := -I. $$(CPPFLAGS)
+else
+$$(EXEC) :: CPPFLAGS := -I.
 endif
 ifneq ($$(CXXFLAGS),)
 $$(EXEC) :: CXXFLAGS := $$(CXXFLAGS)
